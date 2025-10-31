@@ -1,4 +1,5 @@
 import React from "react";
+import Theme from "../Theme/Theme";
 
 const Navbar = () => {
   return (
@@ -72,6 +73,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
+          <Theme></Theme>
           <a className="btn">Button</a>
         </div>
       </div>
