@@ -24,9 +24,9 @@ const Footer = () => {
 
   return (
     <footer className="">
-      <div className="max-w-screen-xl mx-auto p-6 md:p-12 rounded mt-16">
+      <div className="max-w-screen-xl mx-auto rounded mt-16">
         {/* Upper Section */}
-        <div className="w-full flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10">
+        <div className="w-full flex flex-col md:flex-row md:items-start md:justify-end gap-6 md:gap-10">
           {/* Brand + Social Icons */}
           <div className="flex flex-col items-start gap-3 flex-1 min-w-0">
             <Logo></Logo>
@@ -53,7 +53,7 @@ const Footer = () => {
                         aria-label="social link"
                       >
                         <FontAwesomeIcon
-                          className="border border-primary p-1.5 rounded-lg text-primary bg-neutral/30 hover:bg-primary hover:text-neutral transition"
+                          className="border border-primary p-1.5 rounded-lg text-secondary bg-neutral/30 hover:bg-primary hover:text-neutral transition"
                           icon={icon}
                         />
                       </a>
@@ -100,7 +100,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <hr className="border-t border-neutral/30 w-full my-6" />
+        <hr className="border-t border-accent/20 w-full my-6" />
 
         {/* Lower Section */}
         <div className="w-full flex flex-col md:flex-row items-center justify-center gap-2 text-center text-sm">
