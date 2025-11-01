@@ -1,18 +1,27 @@
-import React from "react";
-import Theme from "../Theme/Theme";
-import { Link } from "lucide-react";
+import React, { useState } from "react";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
+  const [MdMenuOpen, setMenuOpen] = useState(false);
+
+  const handleScrool = (sectionId) => {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+    setMenuOpen(false);
+  };
+
   const links = (
     <>
-      <li>
-        <Link>ssdsd</Link>
+      <li onClick={() => handleScrool("home")}>
+        <NavLink>Home</NavLink>
       </li>
     </>
   );
   return (
     <div>
-      <div className="navbar bg-secondary text-primary shadow-sm">
+      <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -45,7 +54,6 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <Theme></Theme>
           <a className="btn">Button</a>
         </div>
       </div>

@@ -5,7 +5,7 @@ import Home from "./Pages/Home/Home";
 
 const App = () => {
   return (
-    <div>
+    <div className="max-w-screen-md mx-auto">
       <Navbar></Navbar>
       <Home></Home>
     </div>
