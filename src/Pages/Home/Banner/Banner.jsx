@@ -2,15 +2,25 @@ import React from "react";
 import Lottie from "lottie-react";
 import img from "../../../assets/1.png";
 import animi from "../../../assets/HRBanner.json";
-import Logo from "../../../Components/Logo/Logo";
+import { Typewriter } from "react-simple-typewriter";
 
 const Banner = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-1 py-10">
       {/* Left Side (Logo, Image, and Text) */}
       <div className="flex-1 md:text-left space-y-4">
-        {/* Logo */}
-        <Logo />
+        {/* Logo / Typewriter Heading */}
+        <h2 className="text-primary text-xl md:text-2xl lg:text-3xl font-semibold md:font-bold">
+          <Typewriter
+            words={["MD. AKHLAKH HUZZAMAN..."]}
+            loop={0}          // 0 = infinite loop
+            cursor
+            cursorStyle="|"
+            typeSpeed={120}   // typing speed
+            deleteSpeed={80}  // deleting speed
+            delaySpeed={1500} // delay before deleting
+          />
+        </h2>
 
         {/* HR Image on top (Rounded with border) */}
         <div className="flex justify-center md:justify-start">
