@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Home = () => {
-  return (
-    <div className='mt-32 bg-red-200'>
-      Akhlak portfoliodsdddddd
-    </div>
-  )
-}
+  return <div className="">Akhlak portfoliodsdddddd</div>;
+};
 
-export default Home
+export default Home;
