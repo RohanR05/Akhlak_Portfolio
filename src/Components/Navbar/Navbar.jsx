@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router";
-
+import Logo from "../Logo/Logo";
+import Theme from "../Theme/Theme";
 const Navbar = () => {
-  const [MdMenuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleScrool = (sectionId) => {
     const el = document.getElementById(sectionId);
@@ -48,13 +49,13 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <Logo></Logo>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <Theme></Theme>
         </div>
       </div>
     </div>
