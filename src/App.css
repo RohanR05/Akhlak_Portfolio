@@ -2,8 +2,16 @@
 @plugin "daisyui";
 @plugin "daisyui/theme" {
   name: "light";
-  default: true;
   --color-primary:#4E9F3D;
   --color-secondary: #3D30A2;
-  --color-accent:red;
+  --color-accent:#000000;
+  --color-neutral:#ffffff
+} 
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: true;
+  --color-primary:#4EAF3D;
+  --color-secondary: #7f7fbf;
+  --color-accent:#ffffff;
+  --color-neutral:#000000
 } 
