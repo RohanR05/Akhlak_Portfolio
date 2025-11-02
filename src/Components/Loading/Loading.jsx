@@ -4,7 +4,7 @@ import animi from "../../assets/LoadingHand.json";
 
 const Loading = () => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center backdrop-blur-md bg-secondary z-50">
+    <div className="fixed inset-0 flex items-center justify-center backdrop-blur-md bg-secondary/10 z-50">
       <Lottie
         animationData={animi}
         loop
